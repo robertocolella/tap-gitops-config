@@ -16,6 +16,6 @@ spec:
     git:
       url: https://github.com/robertocolella/tap-gitops-config.git
       ref:
-        branch: main
+        branch: staging
     subPath: config/my-apps/springboot-maven
 
