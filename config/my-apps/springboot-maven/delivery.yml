@@ -8,7 +8,6 @@ metadata:
     kapp.k14s.io/change-rule: upsert after upserting servicebinding.io/ServiceBindings
   labels:
     app.kubernetes.io/part-of: springboot-maven
-    apps.tanzu.vmware.com/has-tests: "true"
     apps.tanzu.vmware.com/workload-type: web
     app.kubernetes.io/component: run
     carto.run/workload-name: springboot-maven
@@ -34,7 +33,6 @@ spec:
         app.kubernetes.io/component: run
         app.kubernetes.io/part-of: springboot-maven
         apps.tanzu.vmware.com/auto-configure-actuators: "false"
-        apps.tanzu.vmware.com/has-tests: "true"
         apps.tanzu.vmware.com/workload-type: web
         carto.run/workload-name: springboot-maven
         conventions.carto.run/framework: spring-boot
@@ -48,7 +46,7 @@ spec:
       - env:
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.health.probes.enabled="true" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: colellar.azurecr.io/tap/supplychain/springboot-maven-my-apps@sha256:19b35fc3ee4f26fad8e521436315c14de81eb8d1b8c9ef882febb62eadaa67b3
+        image: colellar.azurecr.io/tap/supplychain/springboot-maven-my-apps@sha256:7465a1abd6df3aed1db03b5c8bde5f2bbf409c40030b603ee3774ef76d8e88cb
         livenessProbe:
           httpGet:
             path: /livez
