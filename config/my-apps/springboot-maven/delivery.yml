@@ -46,7 +46,7 @@ spec:
       - env:
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.health.probes.enabled="true" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: colellar.azurecr.io/tap/supplychain/springboot-maven-my-apps@sha256:89e23adc4639112f5b5342139299e6716a9b06118cdb2151935860d87e0b2a7b
+        image: colellar.azurecr.io/tap/supplychain/springboot-maven-my-apps@sha256:824407d61ca6fa978adaa8784959dd3b5bb986e39302ce8886792bf33f27ffb5
         livenessProbe:
           httpGet:
             path: /livez
