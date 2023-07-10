@@ -66,7 +66,7 @@ spec:
           value: org.hibernate.dialect.PostgreSQLDialect
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.health.probes.enabled="true" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: colellar.azurecr.io/tap/supplychain/user-service-my-apps@sha256:c3b60250e8f7425173e2f8d951e6741a1fab7df8ebe84c98a7e8c74e7acf9a65
+        image: colellar.azurecr.io/tap/supplychain/user-service-my-apps@sha256:6c2854743c81190b99bb3ed04c608d40be8d250fbb9a80e75f272c4bd9a5a136
         livenessProbe:
           httpGet:
             path: /livez
