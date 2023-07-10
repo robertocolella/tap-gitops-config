@@ -55,7 +55,7 @@ spec:
           value: application=bankingApp
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.health.probes.enabled="true" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: colellar.azurecr.io/tap/supplychain/discovery-server-my-apps@sha256:d1ff222fd277fc8a910a3b160f784e1bb0757f133f3f47b38014a07461d10f15
+        image: colellar.azurecr.io/tap/supplychain/discovery-server-my-apps@sha256:23d308f39c701c85c11353e3dd4f6ae140d0e1f2fca4c5b32813daff177e83e9
         livenessProbe:
           httpGet:
             path: /livez
