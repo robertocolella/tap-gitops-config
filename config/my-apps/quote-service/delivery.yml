@@ -63,7 +63,7 @@ spec:
           value: redis
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.health.probes.enabled="true" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: colellar.azurecr.io/tap/supplychain/quote-service-my-apps@sha256:2f6df6deb2c75fa0abfc6c2211e8233875f62797f1f85a29f856a03710bd3cf3
+        image: colellar.azurecr.io/tap/supplychain/quote-service-my-apps@sha256:7303296cca1822cf1e34cdefd42066993ee3cbe8efd94690e94bc8cbf4e3b1e8
         livenessProbe:
           httpGet:
             path: /livez
