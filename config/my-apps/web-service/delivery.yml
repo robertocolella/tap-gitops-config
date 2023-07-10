@@ -61,7 +61,7 @@ spec:
           value: my-apps
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.health.probes.enabled="true" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: colellar.azurecr.io/tap/supplychain/web-service-my-apps@sha256:4f09e12c825b5f8b0645ab8657d008845b69bc5ca4dfc62c84cebe39e4ef7bbf
+        image: colellar.azurecr.io/tap/supplychain/web-service-my-apps@sha256:e47efc6719046236231210f3f646fc5ba390a516628d368742bf07aaf2667e0f
         livenessProbe:
           httpGet:
             path: /livez
